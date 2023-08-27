@@ -1,177 +1,217 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@200;300;400;500&family=Work+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Delicious+Handrawn&family=Poppins:wght@300&family=Roboto:wght@300&display=swap');
 
 * {
     margin: 0;
     padding: 0;
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    color: white;
+    font-family: poppins;
     background-color: black;
-    height: 20000px;
-    overflow: hidden;
-    overflow-y: auto;
-}
-
-.button-search-box {
-    background-color: #191d20;
-    width: 80vw;
-    height: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-
-main {
-    position: absolute;
-    left: calc(100vw - 80vw);
-}
-
-.search-box {
-    display: flex;
-    align-items: center;
-    width: 55%;
-    background-color: #272a30;
-    height: 40px;
-    margin-left: 14px;
-    padding-left: 10px;
-    border-radius: 4px;
-}
-
-.search-bar {
-    background-color: transparent;
-    outline: none;
-    margin-left: 10px;
-    border: none;
-    height: 30px;
-}
-
-#sign-up,
-#login {
-    padding: 10px;
-    background-color: red;
     color: white;
-    border-radius: 12px;
-    width: 40%;
-    cursor: pointer;
-    margin: 4px;
 }
 
-.buttons-profile-div {
+.container {
     display: flex;
+    height: 100%;
+}
+
+.sidebar {
+    flex: 0.18;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    height: 100%;
+    margin-inline: 12px;
+    height: 100%;
+}
+
+.sidemain {
     align-items: center;
     justify-content: center;
-    width: 45%;
 }
 
-aside {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-color: black;
-    width: 20vw;
-    overflow-x: auto;
-    height: calc(100% - 0vh);
-    overflow-y: auto;
+.first {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid grey;
 
 }
 
-.aside-content {
-    padding: 20px;
+#main {
+    width: 80%;
 }
 
-a {
+.title {
     color: white;
-    text-decoration: none;
 }
 
-h4 {
-    text-align: center;
-}
-
-div>p {
+.subtitle {
     color: red;
+}
+
+.head {
+    margin-top: 08px;
     text-align: center;
 }
 
-ol {
-    margin-left: 50px;
+#first {
+    text-align: center;
 }
 
-.quick-links {
-    margin-top: 30px;
+#second,
+#third {
+    padding-inline: 30px;
 }
 
-.more-about-us {
-    margin-top: 30px;
-    padding-bottom: 80px;
+.maincontent {
+    flex: 1;
+    position: relative;
+    height: 100vh;
+    overflow-y: scroll !important;
+    
+
+}
+.maincontent::-webkit-scrollbar{
+    display: none !important;
 }
 
-.banner {
-    display: inline-block;
+.navbar {
+    background: #191D20;
     width: 100%;
-    text-align: center;
-}
-
-.banner img {
-    min-width: 95%;
-    max-height: 95%;
-    margin-bottom: 1.5rem;
-}
-
-.menu-image {
-    display: block;
-    margin: 0 auto;
-}
-
-h3 {
-    margin-left: 4rem;
-}
-
-.card {
-    width: 30%;
-    background-color: #191d20;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.card img {
-    max-width: 90%;
-    display: block;
-    margin: 0 auto;
-}
-
-.content {
     display: flex;
-    padding: 0 10px;
+    align-items: center;
+    padding: 10px;
+    gap: 0.5rem;
+    position: sticky;
+    top: 0;
+}
+
+.searchbar {
+    border-radius: 0.3125rem;
+    background: #272A30;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    height: 2.875rem;
+}
+
+#search-icon {
+    background-color: transparent !important;
+}
+
+#searchbox {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    margin-left: 4px;
+}
+
+.btns {
+    display: flex;
+    gap: 0.3rem;
+    background-color: transparent !important;
+    cursor: pointer;
+}
+
+.nav-btns {
+    background-color: #FF2424;
+    width: 08rem;
+    height: 2.875rem;
+    flex-shrink: 0;
+    border: none;
+    border-radius: 0.235rem;
+
+}
+
+#favicon {
+    background-color: transparent !important;
+    height: 50px;
+    width: 50px;
+    padding-right: 10px;
+}
+
+.subcontent {
+    padding: 12px;
+}
+
+#hero {
+    width: 100%;
+}
+.mycards{
+    display: flex;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.card {
+
+    border-radius: 0.625rem;
+    background: #191D20 !important;
+    overflow: hidden;
+}
+.cardimg{
+    width: 15rem;
+    height: 8rem;
+    border-radius: 0.625rem;
+}
+.cardtitle{
+    padding-inline: 8px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    background: #191D20 !important;
+}
+.cardtext1{
+    background: #191D20 !important;
+}
+.plus{
+    background-color: #878787;
+    width: 22px;
+    height: 22px;
+    text-align: center;
+    border-radius: 0.2rem;
 }
 
-.name-and-price>p {
-    color: white;
+@media screen and (max-width : 768px) {
+    .title, .subtitle{
+        font-size: 0.7rem;
+    }
+    .sidebar{
+        gap: 0rem;
+    }
+    .head{
+        font-size: 0.7rem;
+    }
+    li{
+        font-size: 0.7rem;
+    }
+    #second, #third{
+        padding-inline: 10px;
+    }
 }
-
-.add-button {
-    color: grey;
-    display: flex;
-    background-color: #272a30;
-    padding: 4px;
-    border-radius: 10px;
+@media screen and (max-width : 425px) {
+    .btns{
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-btns{
+        width: 3rem;
+        height: 1.575rem;
+    }
+ 
 }
-
-.menu-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
+.nav-btns:hover{
+    cursor: pointer;
 }
-
-.items-image {
-    border-radius: 4px;
+.nav-btns:active{
+    color: skyblue;
+    background-color: aqua;
+}
+.searchbox:focus-visible{
+    outline: -webkit-focus-ring-color auto 0;
 }
